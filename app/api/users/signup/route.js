@@ -17,11 +17,6 @@ export async function POST(request) {
   }
   if (user2) {
     return NextResponse.json(
-      { success: false, message:"Username already exists"}
-    );
-  }
-  if (user2) {
-    return NextResponse.json(
       { success: false},
       { no : 2}
     );
