@@ -1,101 +1,10 @@
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore esse dignissimos. Cumque nobis iusto ad similique itaque et earum, ipsa necessitatibus ut voluptate, fugit soluta nesciunt culpa repellat dolorum? Voluptatem nostrum, perferendis non minus debitis tenetur consequatur quod similique nulla dignissimos nihil deserunt rem optio neque delectus, voluptatum ex ullam labore laboriosam dolorum vitae repellendus pariatur! Eaque, porro pariatur? Maxime blanditiis ratione eligendi animi illo architecto ullam, ab reiciendis a cupiditate iusto? Sit fugit obcaecati nulla vitae doloremque voluptate eos, debitis natus neque quisquam, quibusdam aliquam itaque excepturi. Rem voluptatibus ducimus libero fuga iure illum, repudiandae odio ab harum ullam consequatur sequi et provident optio, dolorem suscipit quibusdam asperiores deserunt eaque consectetur dolores praesentium fugiat modi! Nesciunt quae voluptatem nisi molestias officia. Temporibus fugit delectus sint fuga libero dignissimos quas earum porro unde, dolorum saepe? Earum doloribus voluptas temporibus, soluta unde iure sed minus deserunt aliquid sequi, consequatur beatae possimus quo maiores exercitationem optio ipsa incidunt nulla nesciunt obcaecati? Dolor dicta in debitis aspernatur laudantium, consequuntur est ipsum adipisci, itaque perspiciatis a minima quis aliquam deserunt quidem distinctio fuga quisquam ullam dolores numquam pariatur. Nemo, accusantium dolorem? Nihil, ad ducimus pariatur dignissimos officia quis numquam quod tempore quia, nemo eius beatae quam excepturi! Iste, libero! Quisquam impedit excepturi qui architecto facere iure, tempore eveniet est suscipit voluptas cum molestias nisi minus delectus, hic magnam? Minus harum ut totam repellat, architecto tenetur voluptatem inventore quod reprehenderit, doloribus temporibus pariatur corrupti quis nostrum voluptas possimus vel neque laudantium. Quas nesciunt qui iure minima ad dolores quam tempora eligendi id aspernatur accusantium rem veritatis ut, nihil et, aut deleniti odio dolor fugit repellendus cumque optio esse ab error? Dolor recusandae libero eligendi vero corrupti reprehenderit possimus vitae consectetur, odit sapiente voluptatem inventore. Fuga commodi qui doloremque quod, laboriosam aut explicabo officia illum odit earum ea reiciendis illo ex repellat ipsam aspernatur debitis totam sed sequi rem nulla possimus libero vero alias. Deserunt aspernatur illum praesentium doloremque tempora molestiae. Molestias nulla voluptas ipsum officiis, architecto, dignissimos corporis, reiciendis animi ea ut perspiciatis. Numquam aliquam delectus unde? Repellendus culpa sequi minima delectus? Architecto suscipit fuga ea labore reprehenderit animi ab temporibus blanditiis eveniet rerum, quos velit deleniti assumenda, voluptate, mollitia itaque dolores a consequatur quam! Iure assumenda deserunt quia quasi recusandae consequatur hic. Repudiandae expedita provident praesentium, ut voluptatum perferendis deleniti, quis, fugit ea enim consequuntur vero id mollitia! Cumque, expedita, inventore rerum libero id iusto a accusantium ipsum mollitia beatae incidunt natus, quaerat debitis vel! Deleniti earum vel necessitatibus maiores aliquid quisquam minus qui praesentium esse odit accusamus, voluptates fugiat labore ipsa reiciendis est, at et nostrum exercitationem. Dolore sint consequatur, natus error nulla dolorem sit est delectus, adipisci amet eos? Officia aperiam tempore fuga qui corporis. Impedit consequatur atque placeat doloribus natus quas vitae suscipit, ipsam doloremque adipisci autem dolor assumenda libero quos delectus illo officia explicabo nobis? Atque recusandae laborum praesentium consectetur nam provident vel debitis fugiat eveniet distinctio eius obcaecati dolorem, at ex. Eum consequuntur excepturi voluptatibus eos non incidunt corporis quod, ipsa dicta perferendis at et placeat a laboriosam eaque voluptates aliquid, eius exercitationem sequi repudiandae error illo magnam. Architecto fugiat autem minima quisquam ratione alias nemo voluptate ipsam eius aspernatur quibusdam quis ducimus dolore laborum, nostrum debitis sequi impedit sit sint quo commodi. Temporibus esse minus harum incidunt voluptatem quaerat provident adipisci doloremque! Maiores, dolorem, ducimus eum corrupti perferendis quasi nemo vel aspernatur nam odio ex explicabo at voluptatum? Aliquid, dolores, reprehenderit rem iste magnam sit aut animi debitis id facere consequatur harum illo quos cupiditate deserunt! Ratione aperiam expedita odit veniam? Nemo corporis velit porro! Asperiores odit unde eaque atque suscipit. Sint commodi dolore itaque quam voluptatem! Saepe quaerat deserunt deleniti! Minus, aliquam. Excepturi, cum tenetur, molestias atque odit sapiente itaque quos fugit eligendi, ea sunt? Error aut at exercitationem doloremque! In quia iusto modi ut maiores velit consectetur nam, corporis magni nihil, perferendis fugiat! Consequatur ut ipsam animi dolores iure inventore nulla fugit in ratione vel molestias, commodi debitis laudantium modi asperiores? Exercitationem, esse! Quia quam labore inventore quis esse incidunt recusandae id odio dolore, excepturi veniam voluptates deleniti voluptatibus aut odit dolor autem molestiae animi, distinctio possimus accusantium quaerat tempora ducimus! Repellat praesentium assumenda iusto architecto! Itaque ducimus sapiente esse ipsum excepturi impedit quasi non culpa ut tenetur, dignissimos facere iure accusantium cumque, maiores optio sequi nostrum temporibus doloremque atque nisi corporis. Similique ea repudiandae neque ad alias unde fugit aperiam quod, commodi possimus vitae maxime asperiores! Fugit modi tenetur neque explicabo et dolor laborum iusto inventore iste perferendis. Excepturi eius quo, exercitationem in accusantium nobis perferendis ullam, eveniet officiis enim dicta officia dolore iste. Nam molestiae dicta magnam accusantium ea et aliquid amet voluptates, tempore recusandae nisi aspernatur quisquam necessitatibus inventore mollitia sint? Mollitia, dolore. Iure neque quam placeat ex saepe natus officiis reprehenderit, commodi ducimus nam maxime! Assumenda exercitationem porro impedit, veritatis odio vero beatae quasi sapiente cum laudantium totam minus corrupti rerum explicabo reprehenderit! Perspiciatis pariatur adipisci sequi aut delectus! Velit recusandae esse facilis architecto veritatis quis quidem unde ea blanditiis, rem soluta. Blanditiis accusamus atque at nisi autem labore ipsam quae dicta praesentium, dolor doloribus necessitatibus sequi maxime quis! Molestiae omnis, odit maxime minima repellat officiis laudantium unde voluptate quis deserunt culpa accusantium voluptas quia voluptatibus vitae quae officia sapiente iure laborum perferendis sit nisi? Ex et reprehenderit deserunt animi consequuntur id sint dignissimos modi vero incidunt. Repellendus, ducimus nulla distinctio, voluptatibus officiis eius in mollitia incidunt ipsam necessitatibus deserunt cupiditate voluptas dicta, hic ut quaerat natus totam eveniet? Odit temporibus similique eligendi inventore eius illo et accusantium quam harum tempora, dolores maxime quas suscipit! Sapiente alias nostrum tempora blanditiis accusantium facilis dolore modi. Vitae dignissimos impedit magnam, officia ducimus commodi ullam eum quam ipsum minus esse fuga eveniet, natus blanditiis repellat numquam placeat perferendis. Omnis libero quaerat, optio maxime totam aperiam? Molestiae id aspernatur deleniti explicabo. Architecto quidem beatae consequuntur et facere amet iste dolorem neque inventore eligendi. Praesentium adipisci eligendi ipsa commodi nulla vitae facere, laborum autem ipsum.
     </div>
   );
 }
