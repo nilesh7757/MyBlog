@@ -21,25 +21,25 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4 items-center">
           <Link
             href="/"
-            className="hover:font-bold transition-transform scale-105 duration-300"
+            className="hover:font-semibold transition-transform scale-105 duration-300"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="hover:font-bold transition-transform scale-105 duration-300"
+            className="hover:font-semibold transition-transform scale-105 duration-300"
           >
             About
           </Link>
           <Link
             href="/blog"
-            className="hover:font-bold transition-transform scale-105 duration-300"
+            className="hover:font-semibold transition-transform scale-105 duration-300"
           >
             Blog
           </Link>
           <Link
             href="/contact"
-            className="hover:font-bold transition-transform scale-105 duration-300"
+            className="hover:font-semibold transition-transform scale-105 duration-300"
           >
             Contact
           </Link>
@@ -54,42 +54,63 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="md:hidden">
-          <span className="mx-2">
-            <ModeToggle />
-          </span>
+        <div className="md:hidden flex items-center">
+          <span className="mx-2"></span>
           <Sheet>
-            <SheetTrigger>
-              <div className="focus:outline-none">
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  ></path>
-                </svg>
-              </div>
-            </SheetTrigger>
+            <div className="flex items-center">
+              <SheetTrigger>
+                <div className="focus:outline-none">
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    ></path>
+                  </svg>
+                </div>
+              </SheetTrigger>
+              <ModeToggle className="size-52 bg-black" />
+            </div>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle className="font-bold text-lg text-center my-5">
-                  MyBlog
+                <SheetTitle className="font-semibold cursor-pointer text-lg text-center my-5">
+                  <Link href={"/"}>MyBlog</Link>
                 </SheetTitle>
                 <SheetDescription>
                   {/* <ModeToggle /> */}
 
                   <div className="flex flex-col space-y-5 items-center">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                    <Link href="/blog">Blog</Link>
-                    <Link href="/contact">Contact</Link>
+                    <Link
+                      className="hover:font-semibold transition-transform scale-105 duration-300"
+                      href="/"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      className="hover:font-semibold transition-transform scale-105 duration-300"
+                      href="/about"
+                    >
+                      About
+                    </Link>
+                    <Link
+                      className="hover:font-semibold transition-transform scale-105 duration-300"
+                      href="/blog"
+                    >
+                      Blog
+                    </Link>
+                    <Link
+                      className="hover:font-semibold transition-transform scale-105 duration-300"
+                      href="/contact"
+                    >
+                      Contact
+                    </Link>
                     <div>
                       <Button className="mx-1 text-xs" variant="outline">
                         Login

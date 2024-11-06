@@ -24,17 +24,17 @@ export function ModeToggle() {
   }
 
   return (
-    <button 
+    <button
+    className="px-[10px]"
       onClick={toggleTheme}
       style={{
-        padding: '10px',
         borderRadius: '50%',
         border: 'none',
         cursor: 'pointer',
         backgroundColor: 'transparent'
       }}
     >
-      {theme === "dark" ? <SunIcon size={24} /> : <MoonIcon size={24} />}
+      {theme === "dark" ? <SunIcon size={50} /> : <MoonIcon size={50} />}
     </button>
   );
 }
