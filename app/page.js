@@ -223,7 +223,7 @@ const Home = () => {
           <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">5.0</span>
         </div>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          "This product exceeded my expectations! The quality is fantastic and the customer service was excellent. Highly recommend!"
+          This product exceeded my expectations! The quality is fantastic and the customer service was excellent. Highly recommend!
         </p>
         <p className="text-sm text-gray-500 dark:text-gray-400">- John Doe</p>
       </div>
