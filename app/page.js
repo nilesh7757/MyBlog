@@ -206,7 +206,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] mx-auto p-6 rounded-lg mt-12">
+      <div className="w-[100%] sm:w-[90%] mx-auto p-6 rounded-lg mt-12">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
             Customer Reviews
@@ -257,7 +257,7 @@ const Home = () => {
         </div>
       </div>
       <section>
-        <div className="w-full max-w-7xl mx-auto p-6 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 shadow-xl rounded-xl mt-12">
+        <div className="w-full max-w-7xl mx-auto p-6 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 shadow-xl  mt-12">
           <div className="text-center mb-10">
             <h2 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
               Top Blogs
