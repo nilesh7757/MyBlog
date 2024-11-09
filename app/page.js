@@ -20,7 +20,7 @@ const Home = () => {
           </div>
           <div className="w-full lg:w-1/2 flex justify-center">
             <Image
-              src="/hero.webp"
+              src="./hero.webp"
               alt="Hero Illustration"
               width={616}
               height={617}
