@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+
 const Home = () => {
   return (
     <div className="px-4 md:px-8 lg:px-0">
@@ -36,7 +37,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900  py-12">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-12">
         <div className="text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-gray-200">
             Simple, Transparent Pricing
@@ -45,189 +46,289 @@ const Home = () => {
             Choose the plan that works best for you
           </p>
         </div>
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 px-[10%]">
-          <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <div className="px-6 py-8">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
-                Basic
-              </h3>
-              <p className="mt-4 text-gray-500 dark:text-gray-300">
-                Perfect for getting started
-              </p>
-              <div className="mt-8">
-                <span className="text-4xl font-bold">$9</span>
-                <span className="text-gray-500">/month</span>
+        <div className="mt-16 px-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="px-6 py-8">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
+                  Basic
+                </h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">
+                  Perfect for getting started
+                </p>
+                <div className="mt-8">
+                  <span className="text-4xl font-bold">$9</span>
+                  <span className="text-gray-500">/month</span>
+                </div>
+                <ul className="mt-8 space-y-4">
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">1 User</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">5GB Storage</span>
+                  </li>
+                </ul>
+                <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                  Get Started
+                </Button>
               </div>
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">1 User</span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">5GB Storage</span>
-                </li>
-              </ul>
-              <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                Get Started
-              </Button>
             </div>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <div className="px-6 py-8">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
-                Standard
-              </h3>
-              <Badge className={"bg-blue-600 rounded-full"}>Best Seller</Badge>
-              <p className="mt-4 text-gray-500 dark:text-gray-300">
-                Perfect for getting started
-              </p>
-              <div className="mt-8">
-                <span className="text-4xl font-bold">$10</span>
-                <span className="text-gray-500">/month</span>
+            <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="px-6 py-8">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
+                  Standard
+                </h3>
+                <Badge className={"bg-blue-600 rounded-full"}>Best Seller</Badge>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">
+                  Perfect for getting started
+                </p>
+                <div className="mt-8">
+                  <span className="text-4xl font-bold">$10</span>
+                  <span className="text-gray-500">/month</span>
+                </div>
+                <ul className="mt-8 space-y-4">
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">1 User</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">5GB Storage</span>
+                  </li>
+                </ul>
+                <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                  Get Started
+                </Button>
               </div>
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">1 User</span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">5GB Storage</span>
-                </li>
-              </ul>
-              <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                Get Started
-              </Button>
             </div>
-          </div>
 
-          <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-            <div className="px-6 py-8">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
-                Premium
-              </h3>
-              <p className="mt-4 text-gray-500 dark:text-gray-300">
-                Perfect for getting started
-              </p>
-              <div className="mt-8">
-                <span className="text-4xl font-bold">$15</span>
-                <span className="text-gray-500">/month</span>
+            <div className="bg-white dark:bg-gray-800 rounded-lg border-2 hover:border-blue-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="px-6 py-8">
+                <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-200">
+                  Premium
+                </h3>
+                <p className="mt-4 text-gray-500 dark:text-gray-300">
+                  Perfect for getting started
+                </p>
+                <div className="mt-8">
+                  <span className="text-4xl font-bold">$15</span>
+                  <span className="text-gray-500">/month</span>
+                </div>
+                <ul className="mt-8 space-y-4">
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">1 User</span>
+                  </li>
+                  <li className="flex items-center">
+                    <svg
+                      className="h-5 w-5 text-green-500"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="ml-3">5GB Storage</span>
+                  </li>
+                </ul>
+                <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+                  Get Started
+                </Button>
               </div>
-              <ul className="mt-8 space-y-4">
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">1 User</span>
-                </li>
-                <li className="flex items-center">
-                  <svg
-                    className="h-5 w-5 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span className="ml-3">5GB Storage</span>
-                </li>
-              </ul>
-              <Button className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                Get Started
-              </Button>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg mt-12">
-      <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-200">Customer Reviews</h2>
-      <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
-        <div className="flex items-center mb-2">
-          <div className="flex items-center">
-            {[...Array(5)].map((_, index) => (
-              <svg
-                key={index}
-                className="w-5 h-5 text-yellow-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.974a1 1 0 00.95.69h4.18c.969 0 1.371 1.24.588 1.81l-3.39 2.46a1 1 0 00-.364 1.118l1.286 3.974c.3.921-.755 1.688-1.54 1.118l-3.39-2.46a1 1 0 00-1.175 0l-3.39 2.46c-.784.57-1.838-.197-1.54-1.118l1.286-3.974a1 1 0 00-.364-1.118l-3.39-2.46c-.784-.57-.38-1.81.588-1.81h4.18a1 1 0 00.95-.69l1.286-3.974z" />
-              </svg>
-            ))}
-          </div>
-          <span className="ml-2 text-sm text-gray-600 dark:text-gray-400">5.0</span>
+      <div className="w-[90%] mx-auto p-6 rounded-lg mt-12">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
+            Customer Reviews
+          </h2>
+          <p className="mt-4 text-lg sm:text-xl text-gray-600 dark:text-gray-300">
+            Here see what our top customers say
+          </p>
         </div>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
-          This product exceeded my expectations! The quality is fantastic and the customer service was excellent. Highly recommend!
-        </p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">- John Doe</p>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="border-t border-gray-200 dark:border-gray-700 p-2 bg-white dark:bg-gray-800 shadow-md rounded-lg transition-transform transform hover:scale-105 duration-300 hover:shadow-xl hover:rotate-1">
+              <div className="flex justify-center items-center mb-2">
+                {/* <!-- Removed the 5.0 rating --> */}
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                This product exceeded my expectations! The quality is fantastic
+                and the customer service was excellent. Highly recommend!
+              </p>
+              <p className="text-lg font-bold text-center text-gray-500 dark:text-gray-400">
+                - John Doe
+              </p>
+            </div>
+            <div className="border-t border-gray-200 dark:border-gray-700 p-2 bg-white dark:bg-gray-800 shadow-md rounded-lg transition-transform transform hover:scale-105 duration-300 hover:shadow-xl hover:rotate-1">
+              <div className="flex justify-center items-center mb-2">
+                {/* <!-- Removed the 5.0 rating --> */}
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                This product exceeded my expectations! The quality is fantastic
+                and the customer service was excellent. Highly recommend!
+              </p>
+              <p className="text-lg font-bold text-center text-gray-500 dark:text-gray-400">
+                - John Doe
+              </p>
+            </div>
+            <div className="border-t border-gray-200 dark:border-gray-700 p-2 bg-white dark:bg-gray-800 shadow-md rounded-lg transition-transform transform hover:scale-105 duration-300 hover:shadow-xl hover:rotate-1">
+              <div className="flex justify-center items-center mb-2">
+                {/* <!-- Removed the 5.0 rating --> */}
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                This product exceeded my expectations! The quality is fantastic
+                and the customer service was excellent. Highly recommend!
+              </p>
+              <p className="text-lg font-bold text-center text-gray-500 dark:text-gray-400">
+                - John Doe
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <section>
+        <div className="w-full max-w-7xl mx-auto p-6 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 shadow-xl rounded-xl mt-12">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100">
+              Top Blogs
+            </h2>
+            <p className="mt-4 text-lg sm:text-xl text-gray-600 dark:text-gray-300">
+              Here see todays top blogs
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+                <img
+                  src="./glasseswithcomputer.jpg"
+                  alt="Blog 1"
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+                    Blog Title 1
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-3">
+                    A brief description of the blog post goes here. It should be
+                    engaging and informative.
+                  </p>
+                  <Button className="inline-block mt-5 px-6 py-2 bg-blue-500 text-white font-medium rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition-colors duration-300">
+                    Read more
+                  </Button>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+                <img
+                  src="./laptop.jpg"
+                  alt="Blog 2"
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+                    Blog Title 2
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-3">
+                    A brief description of the blog post goes here. It should be
+                    engaging and informative.
+                  </p>
+                  <Button className="inline-block mt-5 px-6 py-2 bg-blue-500 text-white font-medium rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition-colors duration-300">
+                    Read more
+                  </Button>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl">
+                <img
+                  src="./laptopandcomputer.jpg"
+                  alt="Blog 3"
+                  className="w-full h-52 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+                    Blog Title 3
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 mt-3">
+                    A brief description of the blog post goes here. It should be
+                    engaging and informative.
+                  </p>
+                  <Button className="inline-block mt-5 px-6 py-2 bg-blue-500 text-white font-medium rounded-full shadow-md hover:bg-blue-600 hover:shadow-lg transition-colors duration-300">
+                    Read more
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
