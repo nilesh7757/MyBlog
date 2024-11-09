@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Home = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-0">
+    <div className="">
       {/* Hero Section */}
       <div className="container lg:px-[8%] mx-auto p-8">
         <div className="flex flex-wrap items-center">
